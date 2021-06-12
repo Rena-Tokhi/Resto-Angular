@@ -8,6 +8,13 @@ Add restaurants ,
 Update restaurants ,
 Search restaurants ,
 Delete Restaurants ,
+Login ,
+Register ,
+User Profile ,
+User Setting ,
+
+and working with API services
+
 
  
 
