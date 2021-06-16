@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddRestoComponent } from './add-resto/add-resto.component';
 import { UpddateRestoComponent } from './upddate-resto/upddate-resto.component';
+import { ListRestoComponent } from './list-resto/list-resto.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddRestoComponent,
-    UpddateRestoComponent
+    UpddateRestoComponent,
+    ListRestoComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
