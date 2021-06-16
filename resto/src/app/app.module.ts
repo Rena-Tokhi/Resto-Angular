@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddRestoComponent } from './add-resto/add-resto.component';
+import { UpddateRestoComponent } from './upddate-resto/upddate-resto.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddRestoComponent,
+    UpddateRestoComponent
   ],
   imports: [
     BrowserModule,
