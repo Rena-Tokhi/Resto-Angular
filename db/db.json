@@ -1,0 +1,22 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "KFC restaurant",
+      "address": "Kabul",
+      "email": "KFC@gamil.com"
+    },
+    {
+      "id": 2,
+      "name": "OM restaurant",
+      "address": "Kabul",
+      "email": "OM@gamil.com"
+    },
+    {
+      "name": "Mac D restaurant",
+      "address": "Kabul",
+      "email": "Mac D@gamil.com",
+      "id": 3
+    }
+  ]
+}
