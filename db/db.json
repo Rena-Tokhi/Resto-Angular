@@ -15,8 +15,20 @@
     {
       "name": "Mac D restaurant",
       "address": "Kabul",
-      "email": "Mac D@gamil.com",
+      "email": "Mac.D@gamil.com",
       "id": 3
+    },
+    {
+      "name": "Bar restaurant",
+      "address": "USA",
+      "email": "Bar@gamil.com",
+      "id": 4
+    },
+    {
+      "name": "Net restaurant",
+      "address": "London",
+      "email": "Net@gamil.com",
+      "id": 5
     }
   ]
 }
