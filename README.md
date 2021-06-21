@@ -1,20 +1,11 @@
 # Resto-Angular
 Resto project using angular
 
-this is a Restaurant management system project .
-tasks of project:
-List of restaurants ,
-Add restaurants ,
-Update restaurants ,
-Search restaurants ,
-Delete Restaurants ,
-Login ,
-Register ,
-User Profile ,
-User Setting ,
+About this project
 
-and working with API services
+This is a simple Angular project, performing CRUD operations. 
 
+I am using json-server as a database.
 
  
 
