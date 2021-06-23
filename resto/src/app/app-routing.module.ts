@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     component:UpddateRestoComponent,
-    path:'update'
+    path:'update/:id'
   },
   {
     component:LoginComponent,

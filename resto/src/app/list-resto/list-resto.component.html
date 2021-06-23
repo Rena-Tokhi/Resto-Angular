@@ -14,7 +14,13 @@
       <td>{{item.name}}</td>
       <td>{{item.address}}</td>
       <td>{{item.email}}</td>
-      <th><i (click)="deleteResto(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i></th>
+      <th>
+        <i (click)="deleteResto(item.id)" class="fa fa-trash" style="font-size:20px;color:red;"> </i>
+        <a routerLink="/update/{{item.id}}">
+          <i class="fa fa-edit" style="font-size:20px;color:blue;"> </i>
+        </a>
+
+      </th>
     </tr>
   </tbody>
 </table>
