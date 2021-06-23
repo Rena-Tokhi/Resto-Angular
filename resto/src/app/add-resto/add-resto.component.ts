@@ -22,9 +22,10 @@ alert : boolean = false;
   collectResto(){
     // console.log(this.addResto.value);
     this.resto.saveResto(this.addResto.value).subscribe((result)=>{
-      console.warn("result id here " ,result)
+     
     });
     this.alert = true;
+    this.addResto.reset({ })
   }
 
   closeAlert(){
