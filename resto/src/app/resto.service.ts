@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http'
 @Injectable({
   providedIn: 'root'
 })
+
 export class RestoService {
 
 url="http://localhost:3000/restaurants"
@@ -15,5 +16,9 @@ url="http://localhost:3000/restaurants"
   saveResto(data :any ){
     // console.warn("server " ,data);
    return this.http.post(this.url ,data)
+  }
+  deleteResto(id :any){
+    
+  return this.http.delete(`${this.url} / ${id}`)
   }
 }
