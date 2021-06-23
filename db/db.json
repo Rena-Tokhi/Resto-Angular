@@ -35,6 +35,12 @@
       "email": "RT@gamil.com",
       "address": "kabul",
       "id": 6
+    },
+    {
+      "name": "rina ",
+      "email": "test",
+      "address": "test",
+      "id": 7
     }
   ]
 }
