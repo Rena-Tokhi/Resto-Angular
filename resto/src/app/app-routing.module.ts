@@ -10,7 +10,6 @@ const routes: Routes = [
     component:AddRestoComponent,
     path:'add'
   },
-  
   {
     component:UpddateRestoComponent,
     path:'update/:id'
