@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddRestoComponent } from './add-resto/add-resto.component';
 import { ListRestoComponent } from './list-resto/list-resto.component';
 import { UpddateRestoComponent } from './upddate-resto/upddate-resto.component';
-import { LoginComponent } from './login/login.component';
-
 
 
 const routes: Routes = [
@@ -16,10 +14,6 @@ const routes: Routes = [
   {
     component:UpddateRestoComponent,
     path:'update/:id'
-  },
-  {
-    component:LoginComponent,
-    path:'login'
   },
   {
     component:ListRestoComponent,
