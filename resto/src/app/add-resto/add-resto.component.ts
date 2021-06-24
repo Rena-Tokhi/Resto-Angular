@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl ,FormGroup} from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { RestoService } from '../resto.service'
 
 @Component({
@@ -8,29 +8,27 @@ import { RestoService } from '../resto.service'
   styleUrls: ['./add-resto.component.css']
 })
 export class AddRestoComponent implements OnInit {
-alert : boolean = false;
+  alert: boolean = false;
   addResto = new FormGroup({
-    name : new FormControl(''),
-    email : new FormControl(''),
-    address : new FormControl('')
+    name: new FormControl(''),
+    email: new FormControl(''),
+    address: new FormControl('')
   });
- 
-  constructor(private resto :RestoService) { }
 
-  ngOnInit(): void { 
+  constructor(private resto: RestoService) { }
+
+  ngOnInit(): void {
   }
-  collectResto(){
-    // console.log(this.addResto.value);
-    this.resto.saveResto(this.addResto.value).subscribe((result)=>{
-     
+  collectResto() {
+    this.resto.saveResto(this.addResto.value).subscribe((result) => {
     });
+    
     this.alert = true;
-    this.addResto.reset({ })
+    this.addResto.reset({})
   }
 
-  closeAlert(){
-    this.alert =false;
+  closeAlert() {
+    this.alert = false;
   }
 
 }
- 

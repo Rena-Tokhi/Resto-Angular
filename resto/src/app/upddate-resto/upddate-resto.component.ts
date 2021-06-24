@@ -10,7 +10,7 @@ import { RestoService } from '../resto.service';
   styleUrls: ['./upddate-resto.component.css']
 })
 export class UpddateRestoComponent implements OnInit {
-  alert :boolean = false;
+  alert: boolean = false;
   editResto = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
@@ -19,10 +19,8 @@ export class UpddateRestoComponent implements OnInit {
   constructor(private router: ActivatedRoute, private resto: RestoService) { }
 
   ngOnInit(): void {
-
-    console.warn(this.router.snapshot.params.id);
-    this.resto.getCurrentResto(this.router.snapshot.params.id).subscribe((result :any) => {
-     this.editResto = new FormGroup({
+    this.resto.getCurrentResto(this.router.snapshot.params.id).subscribe((result: any) => {
+      this.editResto = new FormGroup({
         name: new FormControl(result['name']),
         email: new FormControl(result['email']),
         address: new FormControl(result['address'])
@@ -30,13 +28,12 @@ export class UpddateRestoComponent implements OnInit {
     })
   }
 
-  collection(){
+  collection() {
     this.alert = true;
-    this.resto.updateResto(this.router.snapshot.params.id , this.editResto.value).subscribe((result)=>{
-      console.warn(result)
+    this.resto.updateResto(this.router.snapshot.params.id, this.editResto.value).subscribe((result) => {
     })
   }
-  closeAlert(){
+  closeAlert() {
     this.alert = false;
   }
 
