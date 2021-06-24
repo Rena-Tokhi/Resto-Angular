@@ -7,18 +7,22 @@ import { HttpClient } from '@angular/common/http'
 
 export class RestoService {
 
-url="http://localhost:3000/restaurants"
+  url = "http://localhost:3000/restaurants/"
 
-  constructor(private http:HttpClient) { }
-  getList(){
-   return  this.http.get(this.url);
+  constructor(private http: HttpClient) { }
+  getList() {
+    return this.http.get(this.url);
   }
-  saveResto(data :any ){
-    // console.warn("server " ,data);
-   return this.http.post(this.url ,data)
+
+  saveResto(data: any) {
+    return this.http.post(this.url, data)
   }
-  deleteResto(id :any){
-    
-  return this.http.delete(`${this.url} / ${id}`)
+
+  deleteResto(id: any) {
+    return this.http.delete(`${this.url} / ${id}`)
+  }
+
+  getCurrentResto(id :any ){
+    return this.http.get(` ${this.url} / ${id}`)
   }
 }
