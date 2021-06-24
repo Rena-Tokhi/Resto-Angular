@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http'
 
 export class RestoService {
 
-  url = "http://localhost:3000/restaurants/"
+  url = "http://localhost:3000/restaurants"
 
   constructor(private http: HttpClient) { }
   getList() {
@@ -19,10 +19,10 @@ export class RestoService {
   }
 
   deleteResto(id: any) {
-    return this.http.delete(`${this.url} / ${id}`)
+    return this.http.delete(`${this.url}/${id}`)
   }
 
   getCurrentResto(id :any ){
-    return this.http.get(` ${this.url} / ${id}`)
+    return this.http.get(` ${this.url}/${id}`)
   }
 }
