@@ -6,7 +6,7 @@
   </button>
 </div> -->
 
-<form [formGroup]="editResto"  >
+<form [formGroup]="editResto" (ngSubmit)="collection()" >
   <div class="form-group">
     <label >Name</label>
     <input type="text" class="form-control"  placeholder="Enter Name" formControlName="name">
@@ -20,5 +20,5 @@
     <input type="email" class="form-control"  placeholder="Enter email" formControlName="email">
   </div>
  <br>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Update</button>
 </form>
