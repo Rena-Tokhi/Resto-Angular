@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Resto App</a>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" routerLink="">Resto App</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,11 +8,16 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link" routerLink="add"> ADD Restaurant </a>
       <a class="nav-item nav-link" routerLink=""> List Restaurant </a>
-      <a class="nav-item nav-link" routerLink="login"> Login User </a>
-      <a class="nav-item nav-link" routerLink="register"> Register user </a>
+      <a class="nav-item nav-link" routerLink="login"> Login </a>
+      <a class="nav-item nav-link" routerLink="register"> Register </a>
     </div>
   </div>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>
+  <footer>
+    <p>
+      Register your resturant with us
+    </p>
+  </footer>
 </div>
