@@ -4,7 +4,7 @@ import { AddRestoComponent } from './add-resto/add-resto.component';
 import { ListRestoComponent } from './list-resto/list-resto.component';
 import { UpddateRestoComponent } from './upddate-resto/upddate-resto.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent} from './register/register.component';
+
 
 
 const routes: Routes = [
@@ -20,10 +20,6 @@ const routes: Routes = [
   {
     component:LoginComponent,
     path:'login'
-  },
-  {
-    component:RegisterComponent,
-    path:'register'
   },
   {
     component:ListRestoComponent,
